@@ -6,7 +6,38 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.text-center2
+{
+    width: 100%;
+    text-align: center;
+    padding: 0 20%;
+    margin-bottom: 15px;
+}
+.text-center3
+{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 550;
+    text-align: center;
+    padding: 0 17%;
+}
+.text-center4
+{
+    margin-top: 0;
+    font-size: 13px;
+}
+.text-center5
+{
+    font-size: 24px;
+    padding: 0 27%;
+    font-weight: 500;
+    text-align: center;
+}
+.col-sm-6 img 
+    {
+        width: 100%;
+        object-fit: cover;
+    }
 a,
 button {
     transition: all .3s ease-in-out;
@@ -16,15 +47,6 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
-}
-
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -91,7 +113,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -373,6 +395,11 @@ a:hover {
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
+    }
+    .col-sm-6 img 
+    {
+        width: 100%;
+        object-fit: cover;
     }
     .nav-invert .site-navigation {
         left: 0;
@@ -810,19 +837,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -837,6 +864,11 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+    .col-sm-6 img 
+    {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -846,17 +878,32 @@ h4 {
     .nav-center.navbar .nav {
         max-width: 100%
     }
+    .col-sm-6 img 
+    {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
+    .col-sm-6 img 
+    {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
+    }
+    .col-sm-6 img 
+    {
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -871,6 +918,11 @@ h4 {
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
+    }
+    .col-sm-6 img 
+    {
+        width: 100%;
+        object-fit: cover;
     }
     .bloc {
         padding-left: constant(safe-area-inset-left);
@@ -904,6 +956,11 @@ h4 {
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
+    }
+    .col-sm-6 img 
+    {
+        width: 100%;
+        object-fit: cover;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1033,10 +1090,20 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+    .col-sm-6 img 
+    {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    .col-sm-6 img 
+    {
+        width: 100%;
+        object-fit: cover;
     }
 }
