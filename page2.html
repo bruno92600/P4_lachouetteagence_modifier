@@ -38,7 +38,6 @@
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="60" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
@@ -83,38 +82,47 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate success-msg="Votre message a bien été envoyer."
+					fail-msg="Désolé, il semble que notre serveur de messagerie ne réponde pas, désolé pour le désagrément !">
 					<div class="form-group">
 						<label>
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" name="name" class="form-control" type="text" aria-invalid="false">
 					</div>
+					<div class="espace"></div>
 					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
+						<label for="email"> Adresse email </label>
+						<input id="email" name="email" class="form-control" type="email" required autofocus
+							aria-invalid="false">
 					</div>
+					<div class="espace"></div>
 					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
+						<label for="info"> Comment nous avez-vous connu ? </label>
+						<select name="info" id="info">
+							<option value="amis"> part des amis </option>
+							<option value="internet"> sur internet </option>
+							<option value="reseaux sociaux"> sur les réseaux sociaux </option>
+						</select>
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+						</label><textarea id="message" class="form-control" rows="4" cols="50"
+							required></textarea>
+					</div>
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+						type="submit">
 						Envoyer
 					</button>
 				</form>
 			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+			<div class="col-sm-8">
+				<p class="contactchouette">
+					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du
+					lundi
+					au vendredi<br>
 				</p>
 			</div>
 		</div>
